@@ -303,7 +303,11 @@
       .sidebar-action {
         margin-right: 0;
         margin-top: 15px;
-        width: max-content;
+        .sidebar-actio {
+          margin-right: 0;
+          margin-top: 15px;
+          width: 60px;
+        }
       }
     }
   }
