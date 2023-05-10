@@ -41,15 +41,6 @@ English / [简体中文](./README_CN.md)
 - 🚀 v2.0 已经发布，现在你可以使用面具功能快速创建预制对话了！ 了解更多： [ChatGPT 提示词高阶技能：零次、一次和少样本提示](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)。
 - 💡 想要更方便地随时随地使用本项目？可以试下这款桌面插件：https://github.com/mushan0x0/AI0x0.com
 
-## Get Started
-
-> [简体中文 > 如何开始使用](./README_CN.md#开始使用)
-
-1. Get [OpenAI API Key](https://platform.openai.com/account/api-keys);
-2. Click
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web), remember that `CODE` is your page password;
-3. Enjoy :)
-
 ## FAQ
 
 [简体中文 > 常见问题](./docs/faq-cn.md)
