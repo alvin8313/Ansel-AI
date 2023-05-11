@@ -121,9 +121,7 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>华同超级AI</div>
         <div className={styles["sidebar-sub-title"]}>
-          已接入GPT-4神经网络，<br>请在下方获取访问密码进行使用</br>
-        </div>
-        <div className={styles["sidebar-sub-title"]}>
+        已接入GPT-4神经网络，<p>请在下方获取访问密码进行使用</p>
         <a href="/" target="_blank" >点此与我联系</a>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
@@ -176,7 +174,7 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-actio"]}>
+          <div className={styles["sidebar-action"]}>
             <a href="http://ec2-54-219-130-177.us-west-1.compute.amazonaws.com/" target="_blank">
               <IconButton icon={<GithubIcon />} shadow />
             </a>
