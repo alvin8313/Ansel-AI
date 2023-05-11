@@ -8,7 +8,7 @@
   <mask stroke="#000" fill="#fff" id="svg_3">
    <use stroke="#000" fill="#fff" href="#svg_5" xlink:href="#svg_5"/>
   </mask>
-  <text transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="20" id="svg_9" y="23.84783" x="9.03974" stroke-width="0" stroke="#000" fill="#a9f5fc">华 同</text>
-  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="20" id="svg_10" y="51.67392" x="9.03974" stroke-width="0" stroke="#000" fill="#000000">智 能</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="20" id="svg_9" y="23.63044" x="9.03974" stroke-width="0" stroke="#000" fill="#9b9b9b">华 同</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="20" id="svg_10" y="51.67392" x="9.03974" stroke-width="0" stroke="#000" fill="#000000">智 能</text>
  </g>
 </svg>
