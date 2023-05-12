@@ -10,7 +10,7 @@ const cn = {
     ChatItemCount: (count: number) => `${count} 条对话`,
   },
   Chat: {
-    SubTitle: (count: number) => `与 华同AI 的 ${count} 条对话`,
+    SubTitle: (count: number) => `与 ChatGPT 的 ${count} 条对话`,
     Actions: {
       ChatList: "查看消息列表",
       CompressedHistory: "查看压缩后的历史 Prompt",
@@ -140,7 +140,7 @@ const cn = {
       Placeholder: "OpenAI API Key",
     },
 
-    /*Usage: {
+    Usage: {
       Title: "余额查询",
       SubTitle(used: any, total: any) {
         return `本月已使用 $${used}，订阅总额 $${total}`;
@@ -148,7 +148,7 @@ const cn = {
       IsChecking: "正在检查…",
       Check: "重新检查",
       NoAccess: "输入 API Key 或访问密码查看余额",
-    },*/
+    },
     AccessCode: {
       Title: "访问密码",
       SubTitle: "管理员已开启加密访问",

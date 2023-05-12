@@ -143,7 +143,7 @@ const de: LocaleType = {
         "Verwenden Sie Ihren Schlüssel, um das Zugangscode-Limit zu ignorieren",
       Placeholder: "OpenAI API-Schlüssel",
     },
-    /*Usage: {
+    Usage: {
       Title: "Kontostand",
       SubTitle(used: any, total: any) {
         return `Diesen Monat ausgegeben $${used}, Abonnement $${total}`;
@@ -151,7 +151,7 @@ const de: LocaleType = {
       IsChecking: "Wird überprüft...",
       Check: "Erneut prüfen",
       NoAccess: "API-Schlüssel eingeben, um den Kontostand zu überprüfen",
-    },*/
+    },
     AccessCode: {
       Title: "Zugangscode",
       SubTitle: "Zugangskontrolle aktiviert",

@@ -141,7 +141,7 @@ const ru: LocaleType = {
       SubTitle: "Используйте свой ключ, чтобы игнорировать лимит доступа",
       Placeholder: "API ключ OpenAI",
     },
-    /*Usage: {
+    Usage: {
       Title: "Баланс аккаунта",
       SubTitle(used: any, total: any) {
         return `Использовано в этом месяце $${used}, подписка $${total}`;
@@ -149,7 +149,7 @@ const ru: LocaleType = {
       IsChecking: "Проверка...",
       Check: "Проверить",
       NoAccess: "Введите API ключ, чтобы проверить баланс",
-    },*/
+    },
     AccessCode: {
       Title: "Код доступа",
       SubTitle: "Контроль доступа включен",

@@ -138,7 +138,7 @@ const tw: LocaleType = {
       SubTitle: "使用自己的 Key 可規避授權存取限制",
       Placeholder: "OpenAI API Key",
     },
-    /*Usage: {
+    Usage: {
       Title: "帳戶餘額",
       SubTitle(used: any, total: any) {
         return `本月已使用 $${used}，訂閱總額 $${total}`;
@@ -146,7 +146,7 @@ const tw: LocaleType = {
       IsChecking: "正在檢查…",
       Check: "重新檢查",
       NoAccess: "輸入API Key查看餘額",
-    },*/
+    },
     AccessCode: {
       Title: "授權碼",
       SubTitle: "目前是未授權存取狀態",

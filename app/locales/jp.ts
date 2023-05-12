@@ -143,7 +143,7 @@ const jp: LocaleType = {
       SubTitle: "自分のキーを使用してパスワードアクセス制限を迂回する",
       Placeholder: "OpenAI APIキー",
     },
-    /*Usage: {
+    Usage: {
       Title: "残高照会",
       SubTitle(used: any, total: any) {
         return `今月は $${used} を使用しました。総額は $${total} です。`;
@@ -151,7 +151,7 @@ const jp: LocaleType = {
       IsChecking: "確認中...",
       Check: "再確認",
       NoAccess: "APIキーまたはアクセスパスワードを入力して残高を表示",
-    },*/
+    },
     AccessCode: {
       Title: "アクセスパスワード",
       SubTitle: "暗号化アクセスが有効になっています",

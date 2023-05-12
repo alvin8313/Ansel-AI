@@ -141,7 +141,7 @@ const tr: LocaleType = {
       SubTitle: "Erişim kodu sınırını yoksaymak için anahtarınızı kullanın",
       Placeholder: "OpenAI API Anahtarı",
     },
-    /*Usage: {
+    Usage: {
       Title: "Hesap Bakiyesi",
       SubTitle(used: any, total: any) {
         return `Bu ay kullanılan $${used}, abonelik $${total}`;
@@ -149,7 +149,7 @@ const tr: LocaleType = {
       IsChecking: "Kontrol ediliyor...",
       Check: "Tekrar Kontrol Et",
       NoAccess: "Bakiyeyi kontrol etmek için API anahtarını girin",
-    },*/
+    },
     AccessCode: {
       Title: "Erişim Kodu",
       SubTitle: "Erişim kontrolü etkinleştirme",
