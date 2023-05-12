@@ -2,6 +2,52 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
   {
+    avatar: "1f469-200d-1f4bb",
+    name: "PPT创作",
+    context: [
+      {
+        role: "user",
+        content:
+          "生成以下主题的PPT内容框架，需要包括以下内容：\n1.每一页的标题\n2.关键要点\n3.与本页内容匹配的图片，需要用Markdown语言生成，不要用反引号，不要用代码框\n你需要用Unsplash API，遵循以下的格式:\nhttps://source.unsplash.com/1600x900/?< PUT YOUR QUERY HERE >\n你的PPT的主题是：<输入你的PPT主题>",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4",
+      temperature: 1,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
+    avatar: "1f3de-fe0f",
+    name: "关键词搜图",
+    context: [
+      {
+        role: "user",
+        content:
+          "从现在起，当你想发送一张照片时，请使用Markdown，并且不要有反斜线，不要用代码块。\n使用Unsplash API (https://source.unsplash.com/1280×720/?<PUT YOUR QUERY HERE>)。\n如果你明白了，请回复“明白”",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 1,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
     avatar: "1f638",
     name: "文案写手",
     context: [
@@ -175,6 +221,29 @@ export const CN_MASKS: BuiltinMask[] = [
     ],
     modelConfig: {
       model: "gpt-3.5-turbo",
+      temperature: 1,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
+    avatar: "1f372",
+    name: "担任营养师",
+    context: [
+      {
+        role: "user",
+        content:
+          "作为一名营养师，你将根据我提供的健康信息和健康指标，给我量身设计一份营养食谱，每份食谱的热量、脂肪量、蛋白质量、淀粉量及纤维含量要促使我的健康指标会越来越好，并且对该食谱进行简单的解释。\n同时根据我提供的信息及数据给我量身打造一份合理的运动计划，最好以表格的形式展现给我。\n我的状况是：",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
