@@ -141,7 +141,7 @@ const cs: LocaleType = {
       SubTitle: "Použitím klíče ignorujete omezení přístupového kódu",
       Placeholder: "Klíč API OpenAI",
     },
-    Usage: {
+    /*Usage: {
       Title: "Stav účtu",
       SubTitle(used: any, total: any) {
         return `Použito tento měsíc $${used}, předplaceno $${total}`;
@@ -149,7 +149,7 @@ const cs: LocaleType = {
       IsChecking: "Kontroluji...",
       Check: "Zkontrolovat",
       NoAccess: "Pro kontrolu zůstatku zadejte klíč API",
-    },
+    },*/
     AccessCode: {
       Title: "Přístupový kód",
       SubTitle: "Kontrola přístupu povolena",

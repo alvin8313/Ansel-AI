@@ -293,4 +293,50 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
   },
+  {
+    avatar: "1f968",
+    name: "图片搜索",
+    context: [
+      {
+        role: "user",
+        content:
+          "从现在起,当你想发送一张照片时,请使用Markdown,并且不要有反斜线,不要用代码块。\n\n\n使用Unsplash API (https://source.unsplash.com/1280×720/?<PUT YOUR QUERY HERE>)。\n\n\n如果你明白了，请回复“明白”",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 1,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
+    avatar: "1f969",
+    name: "PPT生成",
+    context: [
+      {
+        role: "user",
+        content:
+          "生成以下主题的PPT内容框架，需要包括以下内容：\n\n\n1.每一页的标题\n\n\n2.关键要点\n\n\n3.与本页内容匹配的图片，需要用Markdown语言生成，不要用反引号，不要用代码框，\n\n\n你需要用Unsplash API，遵循以下的格式：https://source.unsplash.com/1600x900/?< PUT YOUR QUERY HERE >\n\n\nPPT的主题是：<输入你的PPT主题>",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 1,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
 ];

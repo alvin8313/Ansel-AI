@@ -141,7 +141,7 @@ const es: LocaleType = {
       SubTitle: "Utiliza tu clave para ignorar el límite de código de acceso",
       Placeholder: "Clave de la API de OpenAI",
     },
-    Usage: {
+    /*Usage: {
       Title: "Saldo de la cuenta",
       SubTitle(used: any, total: any) {
         return `Usado $${used}, subscription $${total}`;
@@ -149,7 +149,7 @@ const es: LocaleType = {
       IsChecking: "Comprobando...",
       Check: "Comprobar de nuevo",
       NoAccess: "Introduzca la clave API para comprobar el saldo",
-    },
+    },*/
     AccessCode: {
       Title: "Código de acceso",
       SubTitle: "Control de acceso habilitado",
