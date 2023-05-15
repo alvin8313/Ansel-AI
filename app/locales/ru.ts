@@ -145,11 +145,11 @@ const ru: LocaleType = {
     Usage: {
       Title: "Баланс аккаунта",
       SubTitle(used: any, total: any) {
-        /*return `Использовано в этом месяце $${used}, подписка $${total}`;
+        return `Использовано в этом месяце $${used}, подписка $${total}`;
       },
       IsChecking: "Проверка...",
       Check: "Проверить",
-      NoAccess: "Введите API ключ, чтобы проверить баланс",*/
+      NoAccess: "Введите API ключ, чтобы проверить баланс",
     },
     AccessCode: {
       Title: "Код доступа",

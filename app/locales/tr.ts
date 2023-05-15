@@ -144,11 +144,11 @@ const tr: LocaleType = {
     Usage: {
       Title: "Hesap Bakiyesi",
       SubTitle(used: any, total: any) {
-        /*return `Bu ay kullanılan $${used}, abonelik $${total}`;
+        return `Bu ay kullanılan $${used}, abonelik $${total}`;
       },
       IsChecking: "Kontrol ediliyor...",
       Check: "Tekrar Kontrol Et",
-      NoAccess: "Bakiyeyi kontrol etmek için API anahtarını girin",*/
+      NoAccess: "Bakiyeyi kontrol etmek için API anahtarını girin",
     },
     AccessCode: {
       Title: "Erişim Kodu",

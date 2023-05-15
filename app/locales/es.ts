@@ -144,11 +144,11 @@ const es: LocaleType = {
     Usage: {
       Title: "Saldo de la cuenta",
       SubTitle(used: any, total: any) {
-        /*return `Usado $${used}, subscription $${total}`;
+        return `Usado $${used}, subscription $${total}`;
       },
       IsChecking: "Comprobando...",
       Check: "Comprobar de nuevo",
-      NoAccess: "Introduzca la clave API para comprobar el saldo",*/
+      NoAccess: "Introduzca la clave API para comprobar el saldo",
     },
     AccessCode: {
       Title: "Código de acceso",

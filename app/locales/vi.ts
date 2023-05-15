@@ -143,11 +143,11 @@ const vi: LocaleType = {
     Usage: {
       Title: "Hạn mức tài khoản",
       SubTitle(used: any, total: any) {
-        /*return `Đã sử dụng $${used} trong tháng này, hạn mức $${total}`;
+        return `Đã sử dụng $${used} trong tháng này, hạn mức $${total}`;
       },
       IsChecking: "Đang kiểm tra...",
       Check: "Kiểm tra",
-      NoAccess: "Nhập API Key để kiểm tra hạn mức",*/
+      NoAccess: "Nhập API Key để kiểm tra hạn mức",
     },
     AccessCode: {
       Title: "Mã truy cập",

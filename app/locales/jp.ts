@@ -146,11 +146,11 @@ const jp: LocaleType = {
     Usage: {
       Title: "残高照会",
       SubTitle(used: any, total: any) {
-        /*return `今月は $${used} を使用しました。総額は $${total} です。`;
+        return `今月は $${used} を使用しました。総額は $${total} です。`;
       },
       IsChecking: "確認中...",
       Check: "再確認",
-      NoAccess: "APIキーまたはアクセスパスワードを入力して残高を表示",*/
+      NoAccess: "APIキーまたはアクセスパスワードを入力して残高を表示",
     },
     AccessCode: {
       Title: "アクセスパスワード",
