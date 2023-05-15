@@ -8,12 +8,20 @@ const buildConfig = getBuildConfig();
 
 export const metadata = {
   title: "华同智能AI",
-  description: "工作生活的高级秘书",
+  description: "工作生活的全能秘书",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#151515" },
+  ],
   appleWebApp: {
     title: "华同智能AI",
     statusBarStyle: "default",
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 
 export default function RootLayout({
@@ -24,23 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="theme-color"
-          content="#fafafa"
-          media="(prefers-color-scheme: light)"
-        />
-        <meta
-          name="theme-color"
-          content="#151515"
-          media="(prefers-color-scheme: dark)"
-        />
         <meta name="version" content={buildConfig.commitId} />
         <link rel="manifest" href="/site.webmanifest"></link>
-        <link rel="preconnect" href="https://fonts.proxy.ustclug.org"></link>
-        <link
-          href="https://fonts.proxy.ustclug.org/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap"
-          rel="stylesheet"
-        ></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>{children}</body>

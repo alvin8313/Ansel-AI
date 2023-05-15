@@ -24,11 +24,11 @@ const en: LocaleType = {
     Rename: "Rename Chat",
     Typing: "Typing…",
     Input: (submitKey: string) => {
-      var inputHints = `Type something and press ${submitKey} to send`;
+      var inputHints = `${submitKey} to send`;
       if (submitKey === String(SubmitKey.Enter)) {
-        inputHints += ", press Shift + Enter to newline";
+        inputHints += ", Shift + Enter to wrap";
       }
-      return inputHints;
+      return inputHints + ", / to search prompts";
     },
     Send: "Send",
     Config: {
@@ -80,7 +80,7 @@ const en: LocaleType = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
-        vi: "Vietnamese",
+        vi: "Tiếng Việt",
         ru: "Русский",
         cs: "Čeština",
       },
@@ -144,11 +144,11 @@ const en: LocaleType = {
     Usage: {
       Title: "Account Balance",
       SubTitle(used: any, total: any) {
-        return `Used this month $${used}, subscription $${total}`;
+        /*return `Used this month $${used}, subscription $${total}`;
       },
       IsChecking: "Checking...",
       Check: "Check",
-      NoAccess: "Enter API Key to check balance",
+      NoAccess: "Enter API Key to check balance",*/
     },
     AccessCode: {
       Title: "Access Code",

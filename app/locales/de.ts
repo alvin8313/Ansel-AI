@@ -81,7 +81,7 @@ const de: LocaleType = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
-        vi: "Vietnamese",
+        vi: "Tiếng Việt",
         ru: "Русский",
         cs: "Čeština",
       },
@@ -146,11 +146,11 @@ const de: LocaleType = {
     Usage: {
       Title: "Kontostand",
       SubTitle(used: any, total: any) {
-        return `Diesen Monat ausgegeben $${used}, Abonnement $${total}`;
+        /*return `Diesen Monat ausgegeben $${used}, Abonnement $${total}`;
       },
       IsChecking: "Wird überprüft...",
       Check: "Erneut prüfen",
-      NoAccess: "API-Schlüssel eingeben, um den Kontostand zu überprüfen",
+      NoAccess: "API-Schlüssel eingeben, um den Kontostand zu überprüfen",*/
     },
     AccessCode: {
       Title: "Zugangscode",

@@ -188,7 +188,7 @@
 .chat-item-delete {
   position: absolute;
   top: 10px;
-  right: -20px;
+  right: 0;
   transition: all ease 0.3s;
   opacity: 0;
   cursor: pointer;
@@ -196,7 +196,7 @@
 
 .chat-item:hover > .chat-item-delete {
   opacity: 0.5;
-  right: 10px;
+  transform: translateX(-10px);
 }
 
 .chat-item:hover > .chat-item-delete:hover {
@@ -532,15 +532,9 @@
   background-color: var(--white);
   color: var(--black);
   font-family: inherit;
-  padding: 10px 14px 50px;
+  padding: 10px 90px 10px 14px;
   resize: none;
   outline: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .chat-input {
-    font-size: 16px;
-  }
 }
 
 .chat-input:focus {
@@ -553,7 +547,17 @@
 
   position: absolute;
   right: 30px;
-  bottom: 30px;
+  bottom: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .chat-input {
+    font-size: 16px;
+  }
+
+  .chat-input-send {
+    bottom: 30px;
+  }
 }
 
 .export-content {

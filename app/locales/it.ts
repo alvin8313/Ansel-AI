@@ -80,7 +80,7 @@ const it: LocaleType = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
-        vi: "Vietnamese",
+        vi: "Tiếng Việt",
         ru: "Русский",
         cs: "Čeština",
       },
@@ -145,11 +145,11 @@ const it: LocaleType = {
     Usage: {
       Title: "Bilancio Account",
       SubTitle(used: any, total: any) {
-        return `Attualmente usato in questo mese $${used}, soglia massima $${total}`;
+        /*return `Attualmente usato in questo mese $${used}, soglia massima $${total}`;
       },
       IsChecking: "Controllando...",
       Check: "Controlla ancora",
-      NoAccess: "Inserire la chiave API per controllare il saldo",
+      NoAccess: "Inserire la chiave API per controllare il saldo",*/
     },
     AccessCode: {
       Title: "Codice d'accesso",

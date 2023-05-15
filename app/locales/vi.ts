@@ -2,7 +2,7 @@ import { SubmitKey } from "../store/config";
 import type { LocaleType } from "./index";
 
 const vi: LocaleType = {
-  WIP: "Coming Soon...",
+  WIP: "Sắp ra mắt...",
   Error: {
     Unauthorized:
       "Truy cập chưa xác thực, vui lòng nhập mã truy cập trong trang cài đặt.",
@@ -80,7 +80,7 @@ const vi: LocaleType = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
-        vi: "Vietnamese",
+        vi: "Tiếng Việt",
         ru: "Русский",
         cs: "Čeština",
       },
@@ -143,11 +143,11 @@ const vi: LocaleType = {
     Usage: {
       Title: "Hạn mức tài khoản",
       SubTitle(used: any, total: any) {
-        return `Đã sử dụng $${used} trong tháng này, hạn mức $${total}`;
+        /*return `Đã sử dụng $${used} trong tháng này, hạn mức $${total}`;
       },
       IsChecking: "Đang kiểm tra...",
       Check: "Kiểm tra",
-      NoAccess: "Nhập API Key để kiểm tra hạn mức",
+      NoAccess: "Nhập API Key để kiểm tra hạn mức",*/
     },
     AccessCode: {
       Title: "Mã truy cập",
