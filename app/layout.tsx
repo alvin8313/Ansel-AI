@@ -19,7 +19,7 @@ export const metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "华同智能AI",
+    title: "华同AI",
     statusBarStyle: "default",
   },
 };

@@ -229,7 +229,7 @@ const cn = {
     SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
     More: "查看全部",
   },
-  
+
   UI: {
     Confirm: "确认",
     Cancel: "取消",
