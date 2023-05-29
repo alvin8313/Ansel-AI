@@ -119,7 +119,7 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>华同智语</div>
+        <div className={styles["sidebar-title"]}>渊博AI</div>
         <div className={styles["sidebar-sub-title"]}>
         已接入GPT-4神经网络，<p>请获取访问密码后使用</p>
         <a href="http://x.eyei.net" target="_blank" >点此获取访问密码</a>

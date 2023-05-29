@@ -7,8 +7,8 @@ import { getBuildConfig } from "./config/build";
 const buildConfig = getBuildConfig();
 
 export const metadata = {
-  title: "华同 AI",
-  description: "华同 AI",
+  title: "渊博AI",
+  description: "助你工作、生活一臂之力。",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -19,7 +19,7 @@ export const metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "华同 AI",
+    title: "渊博AI",
     statusBarStyle: "default",
   },
 };
