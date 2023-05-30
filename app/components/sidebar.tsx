@@ -119,10 +119,10 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>渊博AI</div>
+        <div className={styles["sidebar-title"]}>河图洛书</div>
         <div className={styles["sidebar-sub-title"]}>
-        请获取访问密码后使用
-        <a href="http://x.eyei.net" target="_blank" >点此获取访问密码</a>
+        访问密码请点击下方设置按钮右侧按钮获取<br/>
+        <a href="https://aweb.eyei.net/" target="_blank" >ChatGPT ASK</a><a href="http://jiaoxue.tpddns.cn:89/" target="_blank" >ChatGPT BLOG</a><a href="https://www.deepl.com/" target="_blank" >DeepL</a>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -173,6 +173,11 @@ export function SideBar(props: { className?: string }) {
             <Link to={Path.Settings}>
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
+          </div>
+          <div className={styles["sidebar-action"]}>
+            <a href="http://x.eyei.net" target="_blank">
+              <IconButton icon={<GithubIcon />} shadow />
+            </a>
           </div>
         </div>
         <div>
