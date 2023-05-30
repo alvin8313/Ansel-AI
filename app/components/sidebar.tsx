@@ -121,7 +121,7 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>河图洛书</div>
         <div className={styles["sidebar-sub-title"]}>
-        访问密码请点击下方设置按钮右侧按钮获取<br/>
+        建议对话的时候使用<br/>DeepL的浏览器插件翻<br/>译成英文进行对话，得<br/>到的回答会更加准确。<br/>ChatGPT常用工具：<br/>
         <a href="https://aweb.eyei.net/" target="_blank" >ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;<a href="http://jiaoxue.tpddns.cn:89/" target="_blank" >ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;<a href="https://www.deepl.com/" target="_blank" >DeepL</a>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
