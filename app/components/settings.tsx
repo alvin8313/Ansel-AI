@@ -516,7 +516,9 @@ export function Settings() {
                 }}
               />
             </ListItem>
-            <ListItem
+          )  
+
+          <ListItem
             title={Locale.Settings.Usage.Title}
             subTitle={
               showUsage
@@ -539,7 +541,7 @@ export function Settings() {
               />
             )}
           </ListItem>
-            ) : null}
+              : null}
         </List>
 
         <List>
