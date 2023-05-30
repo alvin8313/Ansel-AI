@@ -174,7 +174,7 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
+          <div className={styles["sidebar-actio"]}>
             <a href="http://x.eyei.net" target="_blank">获取密码</a>
           </div>
         </div>
