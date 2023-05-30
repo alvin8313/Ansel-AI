@@ -1,7 +1,7 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="预览"/>
 
-<h1 align="center">渊博AI</h1>
+<h1 align="center">河图洛书</h1>
 
 
 
