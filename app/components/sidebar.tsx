@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { plus } from 'plus';
+
 import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
@@ -51,7 +51,7 @@ function useHotKey() {
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [chatStore]);
+  });
 }
 
 function useDragSideBar() {
@@ -102,76 +102,6 @@ function useDragSideBar() {
   };
 }
 
-function Home() {
-  useHotKey();
-  const navigate = useNavigate();
-  const chatStore = useChatStore();
-  const { onDragMouseDown, shouldNarrow } = useDragSideBar();
-
-  const handleChatItemClick = (sessionId: string) => {
-    chatStore.selectSessionById(sessionId);
-    navigate(`${Path.chat}/${sessionId}`);
-  };
-
-  const handleAddChatClick = () => {
-    const sessionId = chatStore.createSession();
-    navigate(`${Path.chat}/${sessionId}`);
-  };
-
-  return (
-    <div className={styles.container}>
-      <div className={styles.sidebar} onMouseDown={onDragMouseDown}>
-        <div className={styles.sidebarHeader}>
-          <div className={styles.logo}>
-            <ChatGptIcon />
-          </div>
-          <div className={styles.title}>{Locale.sidebarTitle}</div>
-          <div className={styles.sidebarActions}>
-            <IconButton
-              icon={<AddIcon />}
-              title={Locale.addChat}
-              onClick={handleAddChatClick}
-            />
-            <IconButton
-              icon={<SettingsIcon />}
-              title={Locale.settings}
-              onClick={() => navigate(Path.settings)}
-            />
-            <IconButton
-              icon={<GithubIcon />}
-              title={Locale.sourceCode}
-              onClick={() => window.open(REPO_URL, "_blank")}
-            />
-          </div>
-        </div>
-        <ChatList onItemClick={handleChatItemClick} />
-      </div>
-      <div className={styles.main}>
-        <div className={styles.mainHeader}>
-          <div className={styles.menuButton}>
-            <IconButton
-              icon={shouldNarrow ? <PluginIcon /> : <CloseIcon />}
-              title={Locale.toggleSidebar}
-              onClick={() =>
-                chatStore.update((store) => (store.isSidebarOpen = !store.isSidebarOpen))
-              }
-            />
-          </div>
-          <div className={styles.mask}>
-            <MaskIcon />
-          </div>
-        </div>
-        <div className={styles.mainContent}>
-          <div className={styles.mainTitle}>{Locale.welcomeTitle}</div>
-          <div className={styles.mainSubtitle}>{Locale.welcomeSubtitle}</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Home;
-
 export function SideBar(props: { className?: string }) {
   const chatStore = useChatStore();
 
@@ -182,32 +112,6 @@ export function SideBar(props: { className?: string }) {
 
   useHotKey();
 
-  const SidebarSubTitle = () => {
-    const openAsk = () => {
-      plus.runtime.openURL('https://aweb.eyei.net/');
-    };
-
-    const openBlog = () => {
-      plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
-    };
-
-    const openDeepL = () => {
-      plus.runtime.openURL('https://www.deepl.com/');
-    };
-
-    return (
-      <div className={styles["sidebar-sub-title"]}>
-        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
-        <br />
-        ChatGPT常用工具：
-        <br />
-        <a onClick={openAsk}>ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick={openBlog}>ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick={openDeepL}>DeepL</a>
-      </div>
-    );
-  };
-
   return (
     <div
       className={`${styles.sidebar} ${props.className} ${
@@ -216,7 +120,15 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>河图洛书</div>
-        <SidebarSubTitle />
+        <div className={styles["sidebar-sub-title"]}>
+        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
+        <br />
+        ChatGPT常用工具：
+        <br />
+        <a onClick="https://aweb.eyei.net/">ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onClick="http://jiaoxue.tpddns.cn:89/">ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onClick="https://www.deepl.com/">DeepL</a>
+        </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -267,8 +179,10 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]} onClick={() => plus.runtime.openURL("http://x.eyei.net")}>
-            获取密码
+          <div className={styles["sidebar-action"]}>
+            <a onClick="http://chatgpt.eyei.net" target="_blank">
+              获取密码
+            </a>
           </div>
         </div>
         <div>
