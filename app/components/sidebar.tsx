@@ -111,20 +111,32 @@ export function SideBar(props: { className?: string }) {
   const config = useAppConfig();
 
   useHotKey();
-  
-  
-  const SidebarSubTitle = () => 
+
+  const SidebarSubTitle = () => {
     const openAsk = () => {
       plus.runtime.openURL('https://aweb.eyei.net/');
     };
-  
+
     const openBlog = () => {
       plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
     };
-  
+
     const openDeepL = () => {
       plus.runtime.openURL('https://www.deepl.com/');
     };
+
+    return (
+      <div className={styles["sidebar-sub-title"]}>
+        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
+        <br />
+        ChatGPT常用工具：
+        <br />
+        <a onClick={openAsk}>ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onClick={openBlog}>ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onClick={openDeepL}>DeepL</a>
+      </div>
+    );
+  };
 
   return (
     <div
@@ -134,15 +146,7 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>河图洛书</div>
-        <div className={styles["sidebar-sub-title"]}>
-        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
-        <br />
-        ChatGPT常用工具：
-        <br />
-        <a onClick={openAsk}>ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick={openBlog}>ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick={openDeepL}>DeepL</a>
-        </div>
+        <SidebarSubTitle />
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -193,7 +197,7 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-actio"]} onClick={() => plus.runtime.openURL("http://x.eyei.net")}>
+          <div className={styles["sidebar-action"]} onClick={() => plus.runtime.openURL("http://x.eyei.net")}>
             获取密码
           </div>
         </div>
