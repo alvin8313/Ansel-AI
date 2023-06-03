@@ -114,18 +114,18 @@ export function SideBar(props: { className?: string }) {
   import { plus } from 'plus';
   import styles from './styles.module.css';
   
-  const SidebarSubTitle = () => 
-    const openAsk = () => {
-      plus.runtime.openURL('https://aweb.eyei.net/');
-    };
-  
-    const openBlog = () => {
-      plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
-    };
-  
-    const openDeepL = () => {
-      plus.runtime.openURL('https://www.deepl.com/');
-    };
+  const openAsk = () => {
+    plus.runtime.openURL('https://aweb.eyei.net/');
+  };
+
+  const openBlog = () => {
+    plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
+  };
+
+  const openDeepL = () => {
+    plus.runtime.openURL('https://www.deepl.com/');
+  };
+
 
   return (
     <div
