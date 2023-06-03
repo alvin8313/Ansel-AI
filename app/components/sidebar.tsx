@@ -121,14 +121,15 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>河图洛书</div>
         <div className={styles["sidebar-sub-title"]}>
-        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
-        <br />
-        ChatGPT常用工具：
-        <br />
-        <a onClick="https://aweb.eyei.net/">ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick="http://jiaoxue.tpddns.cn:89/">ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick="https://www.deepl.com/">DeepL</a>
+          建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
+          <br />
+          ChatGPT常用工具：
+          <br />
+          <a onClick={() => window.open('https://aweb.eyei.net/', "_blank", "noopener noreferrer")}>ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a onClick={() => window.open('http://jiaoxue.tpddns.cn:89/', "_blank", "noopener noreferrer")}>ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a onClick={() => window.open('https://www.deepl.com/', "_blank", "noopener noreferrer")}>DeepL</a>
         </div>
+
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -180,7 +181,7 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a onClick="http://chatgpt.eyei.net" target="_blank">
+            <a onClick={() => window.open("http://chatgpt.eyei.net", "_blank", "noopener noreferrer")}>
               获取密码
             </a>
           </div>
