@@ -125,9 +125,9 @@ export function SideBar(props: { className?: string }) {
           <br />
           ChatGPT常用工具：
           <br />
-          <a onClick={() => window.open('https://aweb.eyei.net/', "_blank", "noopener noreferrer")}>ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a onClick={() => window.open('http://jiaoxue.tpddns.cn:89/', "_blank", "noopener noreferrer")}>ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a onClick={() => window.open('https://www.deepl.com/', "_blank", "noopener noreferrer")}>DeepL</a>
+          <a href="https://aweb.eyei.net/" target="_blank" rel="noopener noreferrer">ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://jiaoxue.tpddns.cn:89/" target="_blank" rel="noopener noreferrer">ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.deepl.com/" target="_blank" rel="noopener noreferrer">DeepL</a>
         </div>
 
         <div className={styles["sidebar-logo"] + " no-dark"}>
@@ -181,10 +181,11 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a onClick={() => window.open("http://chatgpt.eyei.net", "_blank", "noopener noreferrer")}>
+            <a href="http://chatgpt.eyei.net" target="_blank" rel="noopener noreferrer">
               获取密码
             </a>
           </div>
+
         </div>
         <div>
           <IconButton
