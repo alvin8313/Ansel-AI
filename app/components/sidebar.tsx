@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { plus } from 'plus';
-import styles from './styles.module.css';
 import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
@@ -26,7 +25,7 @@ import {
 
 import { Link, useNavigate } from "react-router-dom";
 import { useMobileScreen } from "../utils";
-import dynamic from "react/dynamic";
+import dynamic from "next/dynamic";
 import { showToast } from "./ui-lib";
 
 const ChatList = dynamic(async () => (await import("./chat-list")).ChatList, {
@@ -113,18 +112,19 @@ export function SideBar(props: { className?: string }) {
 
   useHotKey();
   
-  const openAsk = () => {
-    plus.runtime.openURL('https://aweb.eyei.net/');
-  };
-
-  const openBlog = () => {
-    plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
-  };
-
-  const openDeepL = () => {
-    plus.runtime.openURL('https://www.deepl.com/');
-  };
-
+  
+  const SidebarSubTitle = () => 
+    const openAsk = () => {
+      plus.runtime.openURL('https://aweb.eyei.net/');
+    };
+  
+    const openBlog = () => {
+      plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
+    };
+  
+    const openDeepL = () => {
+      plus.runtime.openURL('https://www.deepl.com/');
+    };
 
   return (
     <div
@@ -216,7 +216,7 @@ export function SideBar(props: { className?: string }) {
 
       <div
         className={styles["sidebar-drag"]}
-        onMouseDown={(e: React.MouseEvent<HTMLDivElement>) => onDragMouseDown(e)}
+        onMouseDown={(e) => onDragMouseDown(e as any)}
       ></div>
     </div>
   );
