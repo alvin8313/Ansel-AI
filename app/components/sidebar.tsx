@@ -111,6 +111,21 @@ export function SideBar(props: { className?: string }) {
   const config = useAppConfig();
 
   useHotKey();
+  import { plus } from 'plus';
+  import styles from './styles.module.css';
+  
+  const SidebarSubTitle = () => 
+    const openAsk = () => {
+      plus.runtime.openURL('https://aweb.eyei.net/');
+    };
+  
+    const openBlog = () => {
+      plus.runtime.openURL('http://jiaoxue.tpddns.cn:89/');
+    };
+  
+    const openDeepL = () => {
+      plus.runtime.openURL('https://www.deepl.com/');
+    };
 
   return (
     <div
@@ -121,8 +136,13 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>河图洛书</div>
         <div className={styles["sidebar-sub-title"]}>
-        建议对话的时候使用DeepL的浏览器插件翻<br/>译成英文进行对话，得到的回答会更加准确。<br/>ChatGPT常用工具：<br/>
-        <a href="https://aweb.eyei.net/" target="_blank" >ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://jiaoxue.tpddns.cn:89/" target="_blank" >ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.deepl.com/" target="_blank" >DeepL</a>
+        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
+        <br />
+        ChatGPT常用工具：
+        <br />
+        <a onClick={openAsk}>ChatGPT ASK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onClick={openBlog}>ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onClick={openDeepL}>DeepL</a>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -174,8 +194,8 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-actio"]}>
-            <a href="http://x.eyei.net" target="_blank">获取密码</a>
+          <div className={styles["sidebar-actio"]} onClick={() => plus.runtime.openURL("http://x.eyei.net")}>
+            获取密码
           </div>
         </div>
         <div>
