@@ -51,7 +51,7 @@ function useHotKey() {
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  });
+  }, [chatStore]);
 }
 
 function useDragSideBar() {
@@ -101,6 +101,76 @@ function useDragSideBar() {
     shouldNarrow,
   };
 }
+
+function Home() {
+  useHotKey();
+  const navigate = useNavigate();
+  const chatStore = useChatStore();
+  const { onDragMouseDown, shouldNarrow } = useDragSideBar();
+
+  const handleChatItemClick = (sessionId: string) => {
+    chatStore.selectSessionById(sessionId);
+    navigate(`${Path.chat}/${sessionId}`);
+  };
+
+  const handleAddChatClick = () => {
+    const sessionId = chatStore.createSession();
+    navigate(`${Path.chat}/${sessionId}`);
+  };
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.sidebar} onMouseDown={onDragMouseDown}>
+        <div className={styles.sidebarHeader}>
+          <div className={styles.logo}>
+            <ChatGptIcon />
+          </div>
+          <div className={styles.title}>{Locale.sidebarTitle}</div>
+          <div className={styles.sidebarActions}>
+            <IconButton
+              icon={<AddIcon />}
+              title={Locale.addChat}
+              onClick={handleAddChatClick}
+            />
+            <IconButton
+              icon={<SettingsIcon />}
+              title={Locale.settings}
+              onClick={() => navigate(Path.settings)}
+            />
+            <IconButton
+              icon={<GithubIcon />}
+              title={Locale.sourceCode}
+              onClick={() => window.open(REPO_URL, "_blank")}
+            />
+          </div>
+        </div>
+        <ChatList onItemClick={handleChatItemClick} />
+      </div>
+      <div className={styles.main}>
+        <div className={styles.mainHeader}>
+          <div className={styles.menuButton}>
+            <IconButton
+              icon={shouldNarrow ? <PluginIcon /> : <CloseIcon />}
+              title={Locale.toggleSidebar}
+              onClick={() =>
+                chatStore.update((store) => (store.isSidebarOpen = !store.isSidebarOpen))
+              }
+            />
+          </div>
+          <div className={styles.mask}>
+            <MaskIcon />
+          </div>
+        </div>
+        <div className={styles.mainContent}>
+          <div className={styles.mainTitle}>{Locale.welcomeTitle}</div>
+          <div className={styles.mainSubtitle}>{Locale.welcomeSubtitle}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Home;
 
 export function SideBar(props: { className?: string }) {
   const chatStore = useChatStore();
