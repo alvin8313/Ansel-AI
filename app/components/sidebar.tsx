@@ -118,10 +118,12 @@ export function SideBar(props: { className?: string }) {
         shouldNarrow && styles["narrow-sidebar"]
       }`}
     >
-      <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>河图洛书</div>
+      <div className={styles["sidebar-header"]} data-tauri-drag-region>
+        <div className={styles["sidebar-title"]} data-tauri-drag-region>
+          河图洛书
+        </div>
         <div className={styles["sidebar-sub-title"]}>
-          建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
+        建议对话的时候使用DeepL的浏览器插件翻译成英文进行对话，得到的回答会更加准确。
           <br />
           ChatGPT常用工具：
           <br />
@@ -129,7 +131,6 @@ export function SideBar(props: { className?: string }) {
           <a href="http://jiaoxue.tpddns.cn:89/" target="_blank" rel="noopener noreferrer">ChatGPT BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://www.deepl.com/" target="_blank" rel="noopener noreferrer">DeepL</a>
         </div>
-
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -181,11 +182,10 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href="http://chatgpt.eyei.net" target="_blank" rel="noopener noreferrer">
+          <a href="http://p.eyei.net" target="_blank" rel="noopener noreferrer">
               获取密码
             </a>
           </div>
-
         </div>
         <div>
           <IconButton
