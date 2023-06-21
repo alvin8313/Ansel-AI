@@ -2,9 +2,6 @@
 <img src="./docs/images/icon.svg" alt="预览"/>
 
 <h1 align="center">河图洛书</h1>
-
-
-
 ## 环境变量
 
 > 本项目大多数配置项都通过环境变量来设置，教程：[如何修改 Vercel 环境变量](./docs/vercel-cn.md)。
@@ -40,6 +37,11 @@ OpenAI 接口代理 URL，如果你手动配置了 openai 接口代理，请填�
 ### `DISABLE_GPT4` （可选）
 
 如果你不想让用户使用 GPT-4，将此环境变量设置为 1 即可。
+
+
+### 贡献者
+
+[见项目贡献者列表](https://github.com/Yidadaa/ChatGPT-Next-Web/graphs/contributors)
 
 ## 开源协议
 
